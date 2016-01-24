@@ -6,7 +6,9 @@ import { createHashHistory } from 'history';
 import { syncReduxAndRouter } from 'redux-simple-router';
 import configureStore from './store/configureStore';
 import routes from './routes';
-require('aframe');
+// load aframe and it's components
+import AFrame from 'aframe';
+AFrame.registerComponent('text', require('aframe-text-component').component);
 
 const history = useRouterHistory(createHashHistory)({ queryKey: false });
 const store = configureStore();
