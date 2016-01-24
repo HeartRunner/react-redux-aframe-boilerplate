@@ -1,7 +1,7 @@
-Redux Easy Boilerplate
+React Redux Aframe Boilerplate
 =========================
-
-![http://anorudes.github.io/redux-easy-boilerplate/](https://raw.githubusercontent.com/anorudes/redux-easy-boilerplate/569905d1aabc33ce385b1895984141764d364b54/gh/browser.png)
+## A modern boilerplate for developing virtual reality on the web
+###[This boilerplate is modified from redux-easy-boilerplate](http://anorudes.github.io/redux-easy-boilerplate/)
 
 ## Table of Contents
 
@@ -11,6 +11,8 @@ Redux Easy Boilerplate
 - [Build](#build--buildproduction)
 
 ## About
+- [Aframe](https://aframe.io)
+- [Aframe-react](https://github.com/ngokevin/aframe-react)
 - [React 0.14.2](https://github.com/facebook/react)
 - [Redux 3.0.4](https://github.com/gaearon/redux)
 - [React Router 2.0.0-rc4](https://github.com/rackt/react-router)
@@ -36,7 +38,7 @@ $ npm install
 ```
 $ npm start
 ```
-Runs the project in development mode with hot-reloading of `src` folder. 
+Runs the project in development mode with hot-reloading of `src` folder.
 Open your browser at [http://localhost:3000](http://localhost:3000).
 
 ## Contribution
@@ -60,7 +62,7 @@ Using rimraf clean the `dist` folder, which is the target of the `build`
 ```
 $ npm run build
 ```
-Builds the app into the 'dist' folder for deployment 
+Builds the app into the 'dist' folder for deployment
 ```
 $ npm run build:production
 ```
@@ -77,7 +79,7 @@ To make this change edit `src/index.js`
 ```
 // before change
 ...
-import { Router, Redirect, hashHistory as history } from 'react-router'; 
+import { Router, Redirect, hashHistory as history } from 'react-router';
 ...
 
 // after change
@@ -94,6 +96,3 @@ since react-router is keeping track of the navigation (e.g this can be done with
 ```
 $ npm test
 ```
-## TODO
-1. [ ] Write more tests!
-2. [ ] Server-side rendering

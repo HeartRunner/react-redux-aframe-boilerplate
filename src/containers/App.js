@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
+import { Scene } from 'aframe-react';
 import DocumentMeta from 'react-document-meta';
 
-/* components */
-import { TopImage } from 'components/TopImage';
-import { Tools } from 'components/Tools';
-import { Projects } from 'components/Projects';
+import { Cursor, Camera } from 'components';
 
 const metaData = {
-  title: 'Redux Easy Boilerplate',
+  title: 'Virtual Reality',
   description: 'Start you project easy and fast with modern tools',
   canonical: 'http://example.com/path/to/page',
   meta: {
@@ -17,15 +15,19 @@ const metaData = {
     },
   },
 };
+export class App extends Component {
+  static propTypes = {
+    children: React.PropTypes.any,
+  };
 
-export class Home extends Component {
   render() {
     return (
       <section>
         <DocumentMeta {...metaData} />
-        <TopImage />
-        <Tools />
-        <Projects />
+        <Scene>
+          <Camera position="0 2 5"><Cursor/></Camera>
+          {this.props.children}
+        </Scene>
       </section>
     );
   }

@@ -6,7 +6,6 @@ import { items } from './items';
 const rootReducer = combineReducers({
   form: formReducer,
   routing: routeReducer,
-  /* your reducers */
   items,
 });
 
