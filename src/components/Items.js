@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { Entity } from 'aframe-react';
+import { DelayText } from 'components';
 
 export default class Items extends Component {
 
@@ -20,10 +21,12 @@ export default class Items extends Component {
     };
   };
 
-  // move up the label a little. [TODO: change the string state to array]
-  changeLoc(locString) {
-    const locs = locString.split(' ');
-    locs[1] = parseInt(locs[1], 10) + 2;
+
+  // move up the label a little
+  changeLoc(originLocs) {
+    const locs = originLocs.slice();
+    locs[1] = locs[1] + 1;
+    locs[0] = locs[0] - 1;
     return locs.join(' ');
   }
 
@@ -33,11 +36,21 @@ export default class Items extends Component {
       <Entity>
         {
           items.map((item, index) =>
-            <Entity key={index} >
-              <Entity geometry={{ primitive: 'box' }} material="color: blue"
-                position={item.pos}
-                onClick={this.onClick(index)} />
-              <Entity text={`text: ${item.text || '0 0'}`} material="color: #232323" position={this.changeLoc(item.pos)}/>
+            <Entity key={item.text} >
+              <Entity geometry={{
+                primitive: 'cylinder',
+                radius: 1,
+                height: 1,
+                'theta-start': 57,
+              }}
+                material="color: #86C9EC"
+                position={item.pos.join(' ')}
+                onClick={this.onClick(index)}
+              />
+              {
+                // aframe-text-component is extremly slow, so I delay the rendering of each text
+              }
+              <DelayText delay={index * 10000} text={item.text} material="color: #232323" position={this.changeLoc(item.pos)}/>
             </Entity>
           )
         }

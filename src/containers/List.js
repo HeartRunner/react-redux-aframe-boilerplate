@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import DocumentMeta from 'react-document-meta';
-import { Items, AddItem } from 'components';
+import { Items, AddItem, Button } from 'components';
 import { addItem, delItem } from 'modules/items';
 import { Entity } from 'aframe-react';
 const metaData = {
@@ -41,9 +41,7 @@ export class List extends Component {
         <DocumentMeta {...metaData} />
         <Items {...this.props} />
         <AddItem addItem={this.props.addItem}/>
-        <Entity geometry={{ primitive: 'box' }} material="color: red"
-          onClick={this.onClick}
-        />
+        <Button onClick={this.onClick}/>
       </Entity>
     );
   }

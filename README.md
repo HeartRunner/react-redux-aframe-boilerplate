@@ -13,6 +13,7 @@ React Redux Aframe Boilerplate
 ## About
 - [Aframe](https://aframe.io)
 - [Aframe-react](https://github.com/ngokevin/aframe-react)
+- [Aframe-text-component](https://github.com/ngokevin/aframe-text-component)
 - [React 0.14.2](https://github.com/facebook/react)
 - [Redux 3.0.4](https://github.com/gaearon/redux)
 - [React Router 2.0.0-rc4](https://github.com/rackt/react-router)

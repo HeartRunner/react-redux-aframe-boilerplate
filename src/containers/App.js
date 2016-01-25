@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Scene } from 'aframe-react';
 import DocumentMeta from 'react-document-meta';
 
-import { Cursor, Camera } from 'components';
+import { Cursor, Camera, Sky } from 'components';
 
 const metaData = {
   title: 'Virtual Reality',
@@ -25,6 +25,7 @@ export class App extends Component {
       <section>
         <DocumentMeta {...metaData} />
         <Scene>
+          <Sky/>
           <Camera position="0 2 5"><Cursor/></Camera>
           {this.props.children}
         </Scene>

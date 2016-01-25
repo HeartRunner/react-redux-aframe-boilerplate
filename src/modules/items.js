@@ -2,49 +2,53 @@ function randomLoc() {
   return (Math.random() - 0.5) * 15;
 }
 
+function generatePos() {
+  return [randomLoc(), randomLoc(), randomLoc()];
+}
+
 const initialState = {
   items: [{
     text: 'React',
-    pos: `${randomLoc()} ${randomLoc()} ${randomLoc()}`,
+    pos: generatePos(),
   }, {
     text: 'Redux',
-    pos: `${randomLoc()} ${randomLoc()} ${randomLoc()}`,
+    pos: generatePos(),
   }, {
     text: 'React router',
-    pos: `${randomLoc()} ${randomLoc()} ${randomLoc()}`,
+    pos: generatePos(),
   }, {
     text: 'Babel 6',
-    pos: `${randomLoc()} ${randomLoc()} ${randomLoc()}`,
+    pos: generatePos(),
   }, {
     text: 'Bootstrap webpack',
-    pos: `${randomLoc()} ${randomLoc()} ${randomLoc()}`,
+    pos: generatePos(),
   }, {
     text: 'Sass modules (sass-loader css-loader style-loader)',
-    pos: `${randomLoc()} ${randomLoc()} ${randomLoc()}`,
+    pos: generatePos(),
   }, {
     text: 'React transform',
-    pos: `${randomLoc()} ${randomLoc()} ${randomLoc()}`,
+    pos: generatePos(),
   }, {
     text: 'Redux logger',
-    pos: `${randomLoc()} ${randomLoc()} ${randomLoc()}`,
+    pos: generatePos(),
   }, {
     text: 'React document meta',
-    pos: `${randomLoc()} ${randomLoc()} ${randomLoc()}`,
+    pos: generatePos(),
   }, {
     text: 'Redux form',
-    pos: `${randomLoc()} ${randomLoc()} ${randomLoc()}`,
+    pos: generatePos(),
   }, {
     text: 'Redux simple router',
-    pos: `${randomLoc()} ${randomLoc()} ${randomLoc()}`,
+    pos: generatePos(),
   }, {
     text: 'Karma',
-    pos: `${randomLoc()} ${randomLoc()} ${randomLoc()}`,
+    pos: generatePos(),
   }, {
     text: 'Mocha',
-    pos: `${randomLoc()} ${randomLoc()} ${randomLoc()}`,
+    pos: generatePos(),
   }, {
     text: 'Server-side rendering',
-    pos: `${randomLoc()} ${randomLoc()} ${randomLoc()}`,
+    pos: generatePos(),
   }],
 };
 
@@ -56,6 +60,7 @@ export function items(state = initialState, action) {
         items: [
           ...state.items, {
             pos: action.pos,
+            text: action.text,
           },
         ],
       };
@@ -78,7 +83,8 @@ export function items(state = initialState, action) {
 export function addItem() {
   return {
     type: 'ADD_ITEM',
-    pos: `${randomLoc()} ${randomLoc()} ${randomLoc()}`,
+    pos: generatePos(),
+    text: '0 0' + Math.random(),
   };
 }
 

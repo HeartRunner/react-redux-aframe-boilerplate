@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { Entity } from 'aframe-react';
+import {Button} from 'components';
 
 export class Home extends Component {
   static propTypes = {
@@ -15,11 +16,9 @@ export class Home extends Component {
   render() {
     return (
       <Entity>
-        <Entity geometry={{ primitive: 'box' }} material="color: red"
-          onClick={this.onClick}
-        />
-        <Entity text="text: Hello, World!" material="color: blue" position="0 3 0"/>
-        <Entity text={`text: PATH: ${this.props.route.path}`} material="color: #232323" position="1 2 0"/>
+        <Button onClick={this.onClick} />
+        <Entity text="text: React redux aframe boilerplate" material="color: #7e7e7e" position="-5 3 -3"/>
+        <Entity text={`text: PATH: ${this.props.route.path}`} material="color: #232323" position="1 4 -3" rotation="12 -35 10"/>
       </Entity>
     );
   }
