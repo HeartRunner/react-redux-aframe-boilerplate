@@ -68,7 +68,7 @@
     "karma-webpack": "^1.7.0",
     "less": "^2.5.3",
     "less-loader": "^2.2.2",
-    "mocha": "^2.2.5",
+    "mocha": "^2.4.1",
     "morgan": "^1.6.1",
     "node-sass": "^3.1.2",
     "postcss-import": "^7.1.3",
