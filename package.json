@@ -77,7 +77,7 @@
     "react-hot-loader": "^1.2.7",
     "react-loading-order-with-animation": "^1.0.0",
     "react-transform-hmr": "^1.0.1",
-    "redux-logger": "2.3.1",
+    "redux-logger": "2.5.0",
     "resolve-url-loader": "^1.4.3",
     "rimraf": "^2.5.0",
     "sass-loader": "^3.0.0",
