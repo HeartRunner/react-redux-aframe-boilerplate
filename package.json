@@ -91,7 +91,7 @@
   },
   "dependencies": {
     "aframe": "git://github.com/aframevr/aframe.git#dev",
-    "aframe-react": "^1.0.4",
+    "aframe-react": "^1.1.0",
     "aframe-text-component": "^0.1.0",
     "babel-preset-react-hmre": "^1.0.1",
     "classnames": "^2.1.3",
