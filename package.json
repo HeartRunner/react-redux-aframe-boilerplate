@@ -87,7 +87,7 @@
     "webpack-dev-middleware": "^1.2.0",
     "webpack-dev-server": "^1.8.2",
     "webpack-hot-middleware": "^2.4.1",
-    "webpack-merge": "^0.7.1"
+    "webpack-merge": "^0.9.0"
   },
   "dependencies": {
     "aframe": "git://github.com/aframevr/aframe.git#dev",
