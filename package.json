@@ -100,7 +100,7 @@
     "react-document-meta": "^2.0.0-rc2",
     "react-dom": "^0.14.2",
     "react-redux": "^4.2.0",
-    "react-router": "^2.0.0-rc4",
+    "react-router": "^2.2.3",
     "redux": "^3.1.7",
     "redux-form": "^4.0.6",
     "redux-simple-router": "^1.0.2",
