@@ -34,9 +34,6 @@ const common = {
 
   module: {
     loaders: [{
-      test: /bootstrap-sass\/assets\/javascripts\//,
-      loader: 'imports?jQuery=jquery',
-    }, {
       test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
       loader: 'url?limit=10000&mimetype=application/font-woff',
     }, {
