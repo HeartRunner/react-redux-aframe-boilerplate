@@ -1,7 +1,8 @@
 React Redux Aframe Boilerplate
 =========================
-## A modern boilerplate for developing virtual reality on the web
-###[This boilerplate is modified from redux-easy-boilerplate](http://anorudes.github.io/redux-easy-boilerplate/)
+## A modern boilerplate for developing virtual reality content on the web
+[This boilerplate was modified from redux-easy-boilerplate](http://anorudes.github.io/redux-easy-boilerplate/)
+A-Frame is a fantastic framework for building VR contents, be sure to check [the official examples](https://aframe.io/).
 
 ## Table of Contents
 
@@ -14,10 +15,10 @@ React Redux Aframe Boilerplate
 - [Aframe](https://aframe.io)
 - [Aframe-react](https://github.com/ngokevin/aframe-react)
 - [Aframe-text-component](https://github.com/ngokevin/aframe-text-component)
-- [React 0.14.2](https://github.com/facebook/react)
-- [Redux 3.0.4](https://github.com/gaearon/redux)
-- [React Router 2.0.0-rc4](https://github.com/rackt/react-router)
-- [Babel 6](https://github.com/babel/babel)
+- [React](https://github.com/facebook/react)
+- [Redux](https://github.com/gaearon/redux)
+- [React Router](https://github.com/rackt/react-router)
+- [Babel](https://github.com/babel/babel)
 - [Bootstrap-loader](https://github.com/shakacode/bootstrap-loader) (configurable with .bootstraprc)
 - Sass modules ([sass-loader](https://github.com/jtangelder/sass-loader) [css-loader](https://github.com/webpack/css-loader) [style-loader](https://github.com/webpack/style-loader))
 - [react transform](https://github.com/gaearon/react-transform)
@@ -30,8 +31,8 @@ React Redux Aframe Boilerplate
 
 ## Installation
 ```
-$ git clone https://github.com/anorudes/redux-easy-boilerplate.git
-$ cd redux-easy-boilerplate
+$ git clone https://github.com/HeartRunner/react-redux-aframe-boilerplate.git
+$ cd react-redux-aframe-boilerplate
 $ npm install
 ```
 
@@ -77,23 +78,12 @@ keeps track of your currently location on and the state of the page. It is advic
 for production to use `browserHistory` instead of `hashHistory`
 
 To make this change edit `src/index.js`
-```
-// before change
-...
-import { Router, Redirect, hashHistory as history } from 'react-router';
-...
-
-// after change
-...
-import { Router, Redirect, browserHistory as history } from 'react-router';
-...
-
-```
 
 the use of history push api requires that all your requests point to index.html
 since react-router is keeping track of the navigation (e.g this can be done with `.htaccess` file at the web root or with `nginx` configuration)
 
 ## Run karma
+Test is now implemented yet.
 ```
 $ npm test
 ```

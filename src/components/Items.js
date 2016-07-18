@@ -48,7 +48,7 @@ export default class Items extends Component {
                 onClick={this.onClick(index)}
               />
               {
-                // aframe-text-component is extremly slow, so I delay the rendering of each text
+                // aframe-text-component is extremely slow, so I delay the rendering of each text
               }
               <DelayText delay={index * 10000} text={item.text} material="color: #232323" position={this.changeLoc(item.pos)}/>
             </Entity>
