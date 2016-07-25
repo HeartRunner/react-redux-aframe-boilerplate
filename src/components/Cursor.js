@@ -15,6 +15,6 @@ export default props => {
   };
   return (
     <Entity cursor={props} geometry={geometry} material={material}
-      position="0 0 -1"/>
+      position="0 -1 -5"/>
   );
 };

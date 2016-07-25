@@ -17,8 +17,8 @@ export class Home extends Component {
     return (
       <Entity>
         <Button onClick={this.onClick} />
-        <Entity text="text: React redux aframe boilerplate" material="color: #7e7e7e" position="-5 3 -3"/>
-        <Entity text={`text: PATH: ${this.props.route.path}`} material="color: #232323" position="1 4 -3" rotation="12 -35 10"/>
+        <Entity text="text: React redux aframe boilerplate" material="color: #7e7e7e" position="-5 3 1"/>
+        <Entity text={`text: PATH: ${this.props.route.path}`} material="color: #fff" position="1 4 1" rotation="12 -35 10"/>
       </Entity>
     );
   }
