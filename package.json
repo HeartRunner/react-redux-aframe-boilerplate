@@ -83,7 +83,7 @@
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.6",
-    "webpack": "^1.9.6",
+    "webpack": "^1.12.13",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-dev-server": "^1.8.2",
     "webpack-hot-middleware": "^2.4.1",
