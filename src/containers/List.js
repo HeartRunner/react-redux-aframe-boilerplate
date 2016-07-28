@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import DocumentMeta from 'react-document-meta';
 import { Items, AddItem, Button } from 'components';
 import { addItem, delItem } from 'modules/items';
-import { Entity } from 'aframe-react';
+import { Entity } from 'react-aframe';
+
 const metaData = {
   title: 'Virtul Reality List',
   description: 'Start you project easy and fast with modern tools.',
@@ -41,7 +42,7 @@ export class List extends Component {
         <DocumentMeta {...metaData} />
         <Items {...this.props} />
         <AddItem addItem={this.props.addItem}/>
-        <Button onClick={this.onClick}/>
+        <Button onClick={this.onClick} position="-3 0 3"/>
       </Entity>
     );
   }

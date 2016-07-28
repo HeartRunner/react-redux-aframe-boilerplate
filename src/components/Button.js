@@ -1,6 +1,8 @@
-import { Entity, Animation } from 'aframe-react';
+import { Entity, Animation } from 'react-aframe';
 import React, { PropTypes } from 'react';
 
+import * as Aframe from 'react-aframe';
+console.log(Aframe);
 const Button = props => (
   <Entity geometry={{
     primitive: 'sphere',
@@ -10,8 +12,9 @@ const Button = props => (
     'height-segments': 52,
   }} material="color: red"
     onClick={props.onClick}
+    position={props.position}
   >
-    <Animation attribute="position" from="0 0 0" to="0 1 0" repeat="indefinite" direction="alternate"/>
+    <Animation attribute="position" from="0 0 0" to={props.position} repeat="indefinite" direction="alternate"/>
   </Entity>
 );
 

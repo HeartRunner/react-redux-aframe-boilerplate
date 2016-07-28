@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Scene } from 'aframe-react';
+import { Scene } from 'react-aframe';
 import DocumentMeta from 'react-document-meta';
 
 import { Cursor, Camera, Sky, Browser } from 'components';
@@ -11,7 +11,7 @@ const metaData = {
   meta: {
     charset: 'utf-8',
     name: {
-      keywords: 'react,meta,document,html,tags',
+      keywords: 'react,meta,aframe,virtual,reality',
     },
   },
 };
@@ -26,7 +26,7 @@ export class App extends Component {
         <DocumentMeta {...metaData} />
         <Scene>
           <Sky/>
-          <Camera position="0 2 5"><Cursor/></Camera>
+          <Camera position="0 5 15"><Cursor/></Camera>
           <Browser />
           {this.props.children}
         </Scene>

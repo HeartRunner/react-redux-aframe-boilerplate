@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { Entity } from 'aframe-react';
+import { Entity } from 'react-aframe';
 import { DelayText } from 'components';
 
 export default class Items extends Component {

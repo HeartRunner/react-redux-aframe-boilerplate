@@ -1,4 +1,4 @@
-import { Entity } from 'aframe-react';
+import { Entity } from 'react-aframe';
 import React, { Component, PropTypes } from 'react';
 
 

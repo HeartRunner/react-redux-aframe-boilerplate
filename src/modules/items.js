@@ -1,9 +1,9 @@
 function randomLoc() {
-  return (Math.random() - 0.5) * 15;
+  return (Math.random() - 0.5) * 12;
 }
 
 function generatePos() {
-  return [randomLoc(), randomLoc(), randomLoc()];
+  return [randomLoc(), randomLoc(), 12 + randomLoc()];
 }
 
 const initialState = {
