@@ -91,6 +91,7 @@
   },
   "dependencies": {
     "aframe": "git://github.com/aframevr/aframe.git",
+    "aframe-physics-components": "^1.1.0",
     "aframe-text-component": "^0.3.0",
     "babel-preset-react-hmre": "^1.0.1",
     "classnames": "^2.1.3",
